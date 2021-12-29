@@ -1,0 +1,26 @@
+@media (min-width: 600px){ .center { padding: 0rem 10rem; } } @media (max-width: 600px){ .center { margin: 0 2.65152% ; } } .right { padding: 0rem 10rem; } .navbar-brand { float: left; height: 50px; padding: 15px 15px; font-size: 18px; line-height: 20px; display: flex; align-items: center; } .navbar-brand img { margin: 1rem; } .container { padding-left: 0px; margin-left: 10px; } .article-meta__published-at, .article-meta__read-time { color: #5f6368; font-family: Roboto,sans-serif; font-size: .77778em; font-style: normal; font-weight: 100; } .main-content {margin-top:10rem;} h1{ color: #202124; font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif; font-weight: 400; font-size: 56px; } .shadow {box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 5px 0 rgb(0 0 0 / 23%);} .article-meta-time{display: flex;} .article-meta__read-time:before {
+    content: "·";
+    margin: 0 10px;
+} .article-meta__author-noimage {
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    font-size: 24px;
+    height: 40px;
+    justify-content: center;
+    margin-right: 10px;
+    max-width: 40px;
+    width: 100%;
+} .article-meta-time-share {
+    display: flex;
+    justify-content: space-between;
+} .article-meta-author {
+    display: flex;
+    align-items: center;
+} .article-meta-author p{margin:0px;} .article-meta{ margin-bottom: 20; } .related-article {display:flex; margin:10px 0; border-bottom: 1px solid #dce2e6 } .related-article img {width: 90px; height: 90px; object-fit: cover; border-radius:5%;} .img-div {margin-right:10px;} .related-article h4 {margin-top:0px;} .related-article-wrapper {padding: 0 0 10px 0; display:flex;} @media (max-width: 600px){.related-articles { margin: 0 2.65152%;}} @media (min-width: 600px){.related-articles {padding: 0rem 10rem;}} .h4, h4 {
+    font-size: 16; color:#202124;     font-family: Google Sans,Roboto,Arial,Helvetica,sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    color: #202124;
+    letter-spacing: 0;} .footer-company {padding:20px 0; font-size:25px;} .footer-social-wrapper{padding: 30px 0 0} .fa{font-size:25; padding: 0 14px 0 0;} .footer-social {border-bottom: 1px solid #dce2e6; padding-bottom: 10px; } .footer {padding:20px; background-color: #f8f9fa;margin-top: 70px;} @media (min-width: 600px){.footer {padding:  50px 10rem;}}
