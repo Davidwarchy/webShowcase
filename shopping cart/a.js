@@ -10,7 +10,6 @@
 			
 			compName.style.display = "none";
 			
-			
 			navBra.style.float = "";
 			navBra.style.position = 'absolute';
 			navBra.style.left = "calc(50% - 42px)";
@@ -18,16 +17,20 @@
 			
 			quickJect.appendChild(wish_);
 			quickJect.appendChild(cart);
+			
+			document.querySelector('ul.nav.navbar-nav').style.margin = "50 0 0";
 		}
 		
 		function big_screen(){
 			compName.style.display = "";
 			
 			navBra.style.float = "left";
-			navBra.style.position = ""
+			navBra.style.position = "";
 			
 			shopIcons.appendChild(wish_);
 			shopIcons.appendChild(cart);
+			
+			document.querySelector('ul.nav.navbar-nav').style.margin = "0";
 		}
 		
 		if(window.screen.width < 768){

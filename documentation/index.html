@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!-- saved from pandas documentation for chart visualization -->
+
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/">
+<title>Software Documentation</title>
+<link href="./files/theme.css" rel="stylesheet">
+<link href="./files/pydata-sphinx-theme.css" rel="stylesheet">
+<link rel="stylesheet" href="./files/all.min.css">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../imgs/tilespan">
+<link rel="preload" as="font" type="font/woff2" crossorigin="" href="../imgs/tilespan">
+<link rel="stylesheet" type="text/css" href="./files/pygments.css">
+<link rel="stylesheet" type="text/css" href="./files/plot_directive.css">
+<link rel="stylesheet" type="text/css" href="./files/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css">
+<link rel="stylesheet" type="text/css" href="./files/panels-variables.06eb56fa6e07937060861dad626602ad.css">
+<link rel="stylesheet" type="text/css" href="./files/getting_started.css">
+<link rel="stylesheet" type="text/css" href="./files/pandas.css">
+<link rel="preload" as="script" href="./files/pydata-sphinx-theme.js.download">
+<script data-url_root="../" id="documentation_options" src="./files/documentation_options.js.download"></script>
+<script src="./files/jquery.js.download"></script>
+<script src="./files/underscore.js.download"></script>
+<script src="./files/doctools.js.download"></script>
+<script src="./files/embed-amd.js.download"></script>
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="index" title="Index" href="https://pandas.pydata.org/pandas-docs/stable/genindex.html">
+<link rel="search" title="Search" href="https://pandas.pydata.org/pandas-docs/stable/search.html">
+<link rel="next" title="Table Visualization" href="#style.html">
+<link rel="prev" title="Nullable Boolean data type" href="#boolean.html">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="docsearch:language" content="en">
+
+<script async="" src="./files/analytics.js.download"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-27880019-2', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+<script src="./files/pydata-sphinx-theme.js.download"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="v.css">
+</head>
+
+<body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+<div class="container-fluid" id="banner"></div>
+<nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="container-xl">
+<div id="navbar-start">
+<a class="navbar-brand" href="https://pandas.pydata.org/pandas-docs/stable/index.html">
+<img src="../imgs/tilespan.png" class="logo" alt="logo">NAVIGATOR
+</a>
+</div>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+<div id="navbar-center" class="mr-auto">
+<div class="navbar-center-item">
+<ul id="navbar-main-elements" class="navbar-nav">
+
+<li class="toctree-l1 current active nav-item">
+<a class="reference internal nav-link" href="documentation/index.html">
+Documentation
+</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+<div id="navbar-end">
+<div class="navbar-end-item">
+<ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+<li class="nav-item">
+<a class="nav-link" href="#" rel="noopener" target="_blank" title="GitHub">
+<span><i class="fa fa-github"></i></span>
+<label class="sr-only">GitHub</label>
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" rel="noopener" target="_blank" title="Twitter">
+<span><i class="fa fa-twitter"></i></span>
+<label class="sr-only">Twitter</label>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+<div class="container-xl">
+<div class="row">
+
+<div class="col-12 col-md-3 bd-sidebar"><form class="bd-search d-flex align-items-center" action="https://pandas.pydata.org/pandas-docs/stable/search.html" method="get">
+<i class="icon fa fa-search"></i>
+<input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off">
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+<div class="bd-toc-item active">
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1">
+<a class="reference internal" href="#10min.html">
+add
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#dsintro.html">
+copy
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#basics.html">
+difference
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#io.html">
+difference_update
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#indexing.html">
+discard
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#advanced.html">
+intersection
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#merging.html">
+intersection_update
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#reshaping.html">
+isdisjoint
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#text.html">
+issubset
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#missing_data.html">
+issuperset
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#duplicates.html">
+pop
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#categorical.html">
+remove
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#integer_na.html">
+symmetric_difference
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#boolean.html">
+symmetric_difference_update
+</a>
+</li>
+<li class="toctree-l1 current active">
+<a class="current reference internal" href="#">
+union
+</a>
+</li>
+<li class="toctree-l1">
+<a class="reference internal" href="#style.html">
+update
+</a>
+</li>
+</ul>
+</div>
+</nav>
+
+</div>
+<div class="d-none d-xl-block col-xl-2 bd-toc">
+<div class="toc-item">
+<div class="tocsection onthispage pt-5 pb-3">
+<i class="fa fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav">
+<ul class="visible nav section-nav flex-column">
+
+<li class="toc-h2 nav-item toc-entry active">
+	<a class="reference internal nav-link" href="#basic-plotting-plot">
+		Basic plotting:
+		<code class="docutils literal notranslate">
+		<span class="pre">
+		plot
+		</span>
+		</code>
+	</a>
+</li>
+
+<li class="toc-h2 nav-item toc-entry">
+	<a class="reference internal nav-link" href="#other-unions">
+	Other Unions
+	</a>
+	<ul class="nav section-nav flex-column">
+		<li class="toc-h3 nav-item toc-entry">
+		<a class="reference internal nav-link" href="#dictionary">
+		Dictionary
+		</a>
+		</li>
+		<li class="toc-h3 nav-item toc-entry">
+		<a class="reference internal nav-link" href="#list">
+		List
+		</a>
+		</li>
+		<li class="toc-h3 nav-item toc-entry">
+		<a class="reference internal nav-link" href="#array">
+		Array
+		</a>
+	</li>
+	</ul>
+</li>
+
+</ul>
+</nav>
+</div>
+<div class="toc-item">
+</div>
+</div>
+<main class="col-12 col-md-9 col-xl-7 py-md-5 pl-md-5 pr-md-4 bd-content" role="main">
+<div>
+
+<section id="chart-visualization">
+<span id="visualization"></span><h1>Creating and Manipulating Sets<a class="headerlink" href="#chart-visualization" title="Permalink to this headline"></a></h1>
+<p>This page demonstrates various operations on set objects. The programming language used is python.</p>
+<p>We create a set object:</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre style="position: relative;"><span></span><span class="gp">In [1]: </span><span class="n">s1 = {1,2,3}</span> 
+
+<span class="gp">In [2]: </span><span class="n">s2 = {3,4,5}</span>
+
+</div>
+<img alt="../_images/series_plot_basic.png" src="./files/s1s2.png">
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A set can be created from other objects such as lists and numpy arrays</p>
+</div>
+
+<section id="basic-plotting-plot">
+<span id="visualization-basic"></span><h2>Union<a class="headerlink" href="#basic-plotting-plot" title="Permalink to this headline"></a></h2>
+<p>A union operation on two sets combines both sets, picking out only the unique members in those sets</p>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre style="position: relative;"><span></span><span class="gp">In [3]: </span><span class="n">s3 = s1.union(s2)</span>
+</div>
+<img alt="../_images/series_plot_basic.png" src="./files/s3.png">
+
+<section id="other-unions">
+<span id="visualization-other"></span><h2>Unions from Other Objects<a class="headerlink" href="#other-unions" title="Permalink to this headline"></a></h2>
+<p>We can also create set objects from various types of objects</p>
+
+<section id="dictionary">
+<span id="visualization-barplot"></span><h3>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline"></a></h3>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre style="position: relative;"><span></span><span class="gp">In [1]: </span><span class="n">d1 = {'a':1, 'b':2, 'c':3}</span>
+
+<span class="gp">In [2]: </span><span class="n">d2 = {'c':3, 'd':4, 'e':5}</span>
+
+<span class="gp">In [3]: </span><span class="n">s1 = set(d1)</span>
+
+<span class="gp">In [4]: </span><span class="n">s1 = set(d2)</span>
+
+<span class="gp">In [5]: </span><span class="n">s3 = s1.union(s2)</span>
+
+</div>
+</section>
+
+<section id="list">
+<span id="visualization-hist"></span><h3>List<a class="headerlink" href="#list" title="Permalink to this headline"></a></h3>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre style="position: relative;">
+<span class="gp">In [1]: </span><span class="n">l1 = ['a','b','c','d']</span>
+
+<span class="gp">In [2]: </span><span class="n">l2 = ['b','a','c','h']</span>
+
+<span class="gp">In [3]: </span><span class="n">l1.extend(l2)</span>
+
+<span class="gp">In [4]: </span><span class="n">s = set(l1)</span>
+
+</div>
+</section>
+
+<section id="array">
+<span id="visualization-box"></span><h3>Array<a class="headerlink" href="#array" title="Permalink to this headline"></a></h3>
+<div class="highlight-ipython notranslate"><div class="highlight"><pre style="position: relative;">
+<span class="gp">In [1]: </span><span class="kn">import </span><span class="n"> numpy</span> <span class="kn">as </span> <span class="n">np</span>
+
+<span class="gp">In [2]: </span><span class="n">n1 = np.array([1,2,3])</span>
+
+<span class="gp">In [3]: </span><span class="n">n2 = np.array([1,2,3])</span>
+
+<span class="gp">In [4]: </span><span class="n">n3 = np.concatenate([n1,n2])	</span>
+
+<span class="gp">In [5]: </span><span class="n">s = set(n3)</span>
+</div>
+</section>
+
+</section>
+
+
+</section>
+</div>
+
+<div class="prev-next-area">
+<a class="left-prev" id="prev-link" href="#boolean.html" title="previous page">
+<i class="fa fa-angle-left"></i>
+<div class="prev-next-info">
+<p class="prev-next-subtitle">previous</p>
+<p class="prev-next-title">symmetric_difference_update</p>
+</div>
+</a>
+<a class="right-next" id="next-link" href="#style.html" title="next page">
+<div class="prev-next-info">
+<p class="prev-next-subtitle">next</p>
+<p class="prev-next-title">update</p>
+</div>
+<i class="fa fa-angle-right"></i>
+</a>
+</div>
+</main>
+</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-social-wrapper">
+	  <p>Follow Us</p>
+	  <div class="footer-social">
+		  <a href="#" class="fa fa-facebook"></a>
+		  <a href="#" class="fa fa-twitter"></a>
+		  <a href="#" class="fa fa-instagram"></a>
+		  <a href="#" class="fa fa-pinterest"></a>
+	  </div>
+  </div>
+  <div class="footer-company">
+	<a href="https://www.tilespan.com">Tilespan</span>
+  </div>
+</footer>
+
+</div></div></body></html>
